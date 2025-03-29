@@ -35,19 +35,19 @@ client.on('ready', () => {
 });
 
 // Evento de mensagem recebida
-client.on('message', (message) => {
-    console.log("Mensagem recebida");
-    // Lê arquivo
-    const allMessages = readMessagesFile();
-    // Adiciona nova mensagem
-    allMessages.push({
-        from: message.from,
-        body: message.body,
-        timestamp: message.timestamp
-    });
-    // Salva em arquivo
-    writeMessagesFile(allMessages);
-});
+// client.on('message', (message) => {
+//     console.log("Mensagem recebida");
+//     // Lê arquivo
+//     const allMessages = readMessagesFile();
+//     // Adiciona nova mensagem
+//     allMessages.push({
+//         from: message.from,
+//         body: message.body,
+//         timestamp: message.timestamp
+//     });
+//     // Salva em arquivo
+//     writeMessagesFile(allMessages);
+// });
 
 client.initialize();
 
